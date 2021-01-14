@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Vinyasa Flow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">
+CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">LANGUAGE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">English</a>
+        <a href="https://dorseuil.github.io/yoga/" class="w3-bar-item w3-button">French</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="lluvia.gif" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Vinyasa Flow</h3>
+      <p><b>This term means "synchronization of movement with breathing". All the poses of the ashtanga (approximately 50 poses over 1 hour and a half) are linked by transitions during which each movement is synchronized with an inspiration or an expiration. Each pose is held for a certain number of breaths, usually five.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="Secuencia 03.gif" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Yoga Restorative</h3>
+      <p><b>Restorative yoga is very gentle to restore and harmonize the body, especially the nervous system to promote deep recovery and relaxation. So your mind is calm and your body relaxed.</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Jean Gérarld Dorseuil</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">Originally from Reunion Island, Jean Gérald is a dancer, choreographer, ballet, contemporary dance and yoga teacher. Trained in Vinyasa Yoga in 2011 by Gérard Arnaud, his teaching is inspired by dance, a work in movement based on breathing and deep awareness. HIS physical and mental practice through breathing will allow you to implement your sensations, and will open up the field of possibilities</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Morning</p>
+        <img src="images.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Afternoon</p>
+        <img src="images1.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+        <div class="w3-third">
+        <p>Evening</p>
+        <img src="images2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+     
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Lessons are given through the ZOOM platform</h2>
+      <p class="w3-opacity w3-center" ><i>The price per course is 18 EUR</i></p><br>
+      
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">December <span class="w3-tag w3-red w3-margin-left">Full</span></li>
+        <li class="w3-padding">January <span class="w3-tag w3-red w3-margin-left">Available</span></li>
+        <li class="w3-padding">February <span class="w3-badge w3-right w3-margin-right">65</span></li>
+      </ul>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">To register</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+         <p class="w3-wide w3-center"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchYx2A7Qh2cMSnM0JqZZ0_7EESN-Lm420NVtMXrtd0F9xVHA/viewform?embedded=true" width="640" height="663" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></a></p>
+      </div>
+     
+        
+    
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/jeangeralddorseuil/"></i>
+
+  <p class="w3-medium">Power by <a href="https://www.instagram.com/vladimirvalse/" target="_blank">Vladimir Valse</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
